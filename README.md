@@ -3,20 +3,25 @@ Your mission is to write a Prolog program to solve the sudoku puzzle.
 The input will look like this:
 ````c
 sudoku([_,_,2,3,_,_,_,_,_,_,_,_,3,4,_,_], Sol).
+````
 
 The output will look like this:
+````c
 Sol = [4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2]
+````
 
-Think of it as a 4X4 Sudoku puzzle:
-Capture.PNG
+Think of it as a 4X4 Sudoku puzzle
 
 Each row, each column, and each 2X2 subgrid must contain each of the digits 1,2,3 and 4 with no repeated digit in that set.
 Given that you know the input, you know that you must have a rule like:
+````c
 sudoku(Puzzle, Solution) :-
+````
 
 Here is a suggested starting point for your code (Comment lines start with %):
 Note: I recommend using g-prolog because swi-prolog does not display the solution all the way.
 Note: not(A=B) operator in swi-prolog must be written as A\==B or A=\=B in g-prolog.
+````c
 % Compile: gplc sudoku.pl 
 %    Run: ./sudoku
 %    sudoku([_,_,2,3, _,_,_,_, _,_,_,_, 3,4,_,_], Sol).
@@ -57,14 +62,19 @@ sudoku(Puzzle, Solution) :-
                   check(S21,S22,S23,S24),
 % hmmm... We have checked the first two rows. What else do we need to check?
 % Some more code is needed here.
+````
 
 EC (15 pts)
 Rewrite the program that displayed the solution in the form
+````c
  Sol = [4, 1, 2, 3,
         2, 3, 4, 1,
         1, 2, 3, 4,
         3, 4, 1, 2]
+````
 The input will look like this:
+````c
 sudoku([_,_,2,3,_,_,_,_,_,_,_,_,3,4,_,_]).
+````
 Submission
 Upload the file sudoku.pl with your solution and a screenshot of the program run.
