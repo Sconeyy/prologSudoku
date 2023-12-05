@@ -10,7 +10,7 @@ The output will look like this:
 Sol = [4,1,2,3,2,3,4,1,1,2,3,4,3,4,1,2]
 ````
 
-Think of it as a 4X4 Sudoku puzzle
+Think of it as a 4X4 Sudoku puzzle.
 
 Each row, each column, and each 2X2 subgrid must contain each of the digits 1,2,3 and 4 with no repeated digit in that set.
 Given that you know the input, you know that you must have a rule like:
